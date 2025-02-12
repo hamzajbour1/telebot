@@ -1,13 +1,13 @@
 const { Telegraf } = require('telegraf');
 const { message } = require('telegraf/filters');
 
-const bot = new Telegraf(process.env.BOT_TOKEN);
+const bot = new Telegraf("7878386503:AAE15lB1snm2il5HnA4YUBk1HlkZ3PVRfFo");
 
 bot.command('start', (ctx) => {
   ctx.reply('Welcome to the Telegram Web App Bot!', {
     reply_markup: {
       keyboard: [
-        [{ text: 'Open Web App', web_app: { url: 'https://hamster-kombat-clone.BOT_TOKEN.app/' } }]
+        [{ text: 'Start Earn', web_app: { url: 'https://hamster-kombat-clone.app/' } }]
       ],
       resize_keyboard: true,
       one_time_keyboard: false
