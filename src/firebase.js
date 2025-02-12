@@ -3,17 +3,18 @@ import { getAuth } from 'firebase/auth';
 import { getFirestore } from 'firebase/firestore';
 
 const firebaseConfig = {
-  // Replace with your Firebase configuration
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_AUTH_DOMAIN",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_STORAGE_BUCKET",
-  messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-  appId: "YOUR_APP_ID"
+  apiKey: "AIzaSyCyZ5jjbRePgmVsvIbRIfrNrMel7tsmSjY",
+  authDomain: "telegrambot-63471.firebaseapp.com",
+  databaseURL: "https://telegrambot-63471-default-rtdb.firebaseio.com",
+  projectId: "telegrambot-63471",
+  storageBucket: "telegrambot-63471.firebasestorage.app",
+  messagingSenderId: "301943560381",
+  appId: "1:301943560381:web:fa07bd6572dfde28243fd4",
 };
 
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
+
 const db = getFirestore(app);
 
 export { auth, db };
